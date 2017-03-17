@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="#">
+<head>
+ 	<meta charset="utf-8">
+ 	<title>Nike Product Card - Huarache</title>
+ 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:300,400" rel="stylesheet">
+ 	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+	<link rel="favicon" href="favicon.ico">
+ 	<link rel="stylesheet" href="styles/styles.css">
+ 	<link rel="stylesheet" href="styles/normalize.css">
+</head>
+<body class="ba-product-card">
+ 	<header class="ba-header">
+
+	 <div class="ba-container ba-clearfix">
+
+	 	<a href="#" class="logo">
+	 		<img src="images/logo.png" alt="Nike" class="ba-logo__image">
+	 	</a>
+
+	 	<nav class="ba-navigation ba-clearfix">
+	 		<ul class="ba-navigation__list ba-clearfix">
+	 			<li class="ba-navigation__item">
+	 				<a href="#" class="ba-navigation__link">Lifestyle</a>
+	 			</li>
+	 			<li class="ba-navigation__item">
+	 				<a href="#" class="ba-navigation__link ba-navigation__link--active">Running</a>
+	 			</li>
+	 			<li class="ba-navigation__item">
+	 				<a href="#" class="ba-navigation__link">Football</a>
+	 			</li>
+	 			<li class="ba-navigation__item">
+	 				<a href="#" class="ba-navigation__link">Skateboarding</a>
+	 			</li>
+	 		</ul>
+
+	 	<button class="ba-navigation__toggle">
+	 		<span class="ba-bar"></span>
+	 	</button>
+
+ 		</nav>
+
+ 	</div>
+
+ 	<script>
+ 		document.querySelector('.ba-navigation__toggle').addEventListener('click', function() {
+   		if (document.querySelector('.ba-bar').classList.contains('animate')) {
+    	document.querySelector('.ba-bar').classList.remove('animate');
+   		} else {
+    	document.querySelector('.ba-bar').classList.add('animate');
+   		}
+  		});
+ 	</script>
+
+ 	</header>
+
+
+ 	<article class="ba-product ba-container ba-clearfix">
+
+ 	<img class="ba-product__background" src="images/background_2.png" alt="background">
+
+ 		<div class="ba-product__gallery ba-left ba-slider">
+
+ 			<h1 class="ba-product__title">Huarache</h1>
+
+ 			<img src="images/main-image.png" alt="Huarache" class="ba-product__image ba-product__image--main">
+
+ 			<ul class="ba-product__controls">
+ 				<li class="ba-product__item">
+ 					<button class="ba-product__control">
+ 						<img class="ba-product__image--button" src="images/thumnail1.png">
+ 					</button>
+ 				</li>
+ 				 <li class="ba-product__item">
+ 					<button  class="ba-product__control">
+ 						<img class="ba-product__image--button" src="images/thumbnail2.png">
+ 					</button>
+ 				</li>
+ 				 <li class="ba-product__item">
+ 					<button  class="ba-product__control">
+ 						<img class="ba-product__image--button" src="images/thumbnail3.png">
+ 					</button>
+ 				</li>
+ 			</ul>
+
+ 		</div> 
+
+ 		<div class="ba-product__info ba-right">
+
+			<button class="ba-close">x</button>
+
+			 <div class="ba-product__info--new">
+ 				<p>New</p>	
+ 			</div>
+			<h1 class="ba-product__slogan">The <span class="ba-product__slogan--purple">running</span><br/> has just begun</h1>
+
+			<h4 class="ba-product__info--name">Huarache</h4>
+			<div class="ba-product__rating">
+				<img class="ba-roduct__rating--star" src="images/star-black.png" alt="star">
+				<img class="ba-roduct__rating--star" src="images/star-black.png" alt="star">
+				<img class="ba-roduct__rating--star" src="images/star-black.png" alt="star">
+				<img class="ba-roduct__rating--star" src="images/star-black.png" alt="star">
+				<img class="ba-roduct__rating--star" src="images/star-grey.png" alt="star">
+			</div>
+
+			<p class="ba-product__price">&#36; 200</p>
+
+			<p class="ba-product__size">Size</p>
+
+			<ul class="ba-product__sizes">
+				<button class="ba-product__size-option">7</button>
+				<button class="ba-product__size-option">8</button>
+				<button class="ba-product__size-option">9</button>
+				<button class="ba-product__size-option">10</button>
+				<button class="ba-product__size-option">11</button>
+			</ul>
+
+			<button class="ba-button ba-button--add">Add to cart</button>
+
+			<button class="ba-button ba-button--wishlist">Wishlist</button>
+
+ 		</div>
+
+ 	</article>
+
+	<script>
+		document.querySelector('.ba-navigation__toggle').addEventListener('click', function() {
+			if (document.querySelector('.ba-bar').classList.contains('animate')) {
+				document.querySelector('.ba-bar').classList.remove('animate');
+			} else {
+				document.querySelector('.ba-bar').classList.add('animate');
+			}
+		});
+	</script>
+
+</body>
+</html>
